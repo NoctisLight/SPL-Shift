@@ -1,0 +1,22 @@
+{
+  "name": "spl-shift",
+  "version": "0.1.0",
+  "description": "Hands-on SPL Token exercises for Blueshift students",
+  "type": "module",
+  "scripts": {
+    "level": "tsx src/run.ts",
+    "check": "tsx src/check.ts",
+    "setup": "tsx src/setup.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@solana/spl-token": "^0.4.12",
+    "bs58": "^6.0.0",
+    "tsx": "^4.19.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}
