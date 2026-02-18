@@ -34,12 +34,7 @@ All of this must happen in a **single transaction**.
 ## How to run
 
 ```bash
-# 1. Write your code in index.ts
-# 2. Execute it
 npm run level 0
-
-# 3. Check your work
-npm run check 0
 ```
 
 ## Validation criteria

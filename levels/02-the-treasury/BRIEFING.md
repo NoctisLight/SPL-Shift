@@ -38,7 +38,6 @@ After the manager completes their work, you **revoke** their access. Trust, but 
 
 ```bash
 npm run level 2
-npm run check 2
 ```
 
 ## Validation criteria

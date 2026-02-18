@@ -38,7 +38,6 @@ with it comes responsibility.
 
 ```bash
 npm run level 3
-npm run check 3
 ```
 
 ## Validation criteria

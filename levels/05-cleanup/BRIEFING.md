@@ -34,7 +34,6 @@ It's good practice — and free money. Clean up after yourself.
 
 ```bash
 npm run level 5
-npm run check 5
 ```
 
 ## Validation criteria

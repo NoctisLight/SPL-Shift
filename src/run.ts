@@ -1,15 +1,15 @@
 /**
- * Solana Forge — Level runner
+ * SPL Shift — Level runner + checker
  *
  * Usage:
- *   npm run level 0       # run level 0 starter
+ *   npm run level 0       # run level 0 then check it
  */
 
 const arg = process.argv[2];
 
 if (!arg) {
   console.log("Usage: npm run level <number>");
-  console.log("  npm run level 0     — run level 0");
+  console.log("  npm run level 0     — run and check level 0");
   process.exit(1);
 }
 
@@ -30,12 +30,26 @@ if (!dir) {
   process.exit(1);
 }
 
+// Step 1: Run
 try {
   const mod = await import(`../levels/${dir}/index.js`);
   await mod.main();
 } catch (e: any) {
   if (e.code === "ERR_MODULE_NOT_FOUND") {
     console.log(`Level ${level} not started yet. Edit levels/${dir}/index.ts`);
+    process.exit(1);
+  } else {
+    throw e;
+  }
+}
+
+// Step 2: Check
+try {
+  const validator = await import(`../levels/${dir}/validate.js`);
+  await validator.validate();
+} catch (e: any) {
+  if (e.code === "ERR_MODULE_NOT_FOUND") {
+    console.log(`No validator for level ${level} yet.`);
   } else {
     throw e;
   }

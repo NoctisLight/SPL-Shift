@@ -41,7 +41,6 @@ Reproduce the entire lifecycle from Levels 00-05 with a **fresh mint**:
 
 ```bash
 npm run level 6
-npm run check 6
 ```
 
 ## Validation criteria

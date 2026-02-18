@@ -36,7 +36,6 @@ This is irreversible. There's no "undo" for renouncing authority. Choose wisely.
 
 ```bash
 npm run level 4
-npm run check 4
 ```
 
 ## Validation criteria

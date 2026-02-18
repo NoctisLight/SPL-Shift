@@ -38,7 +38,6 @@ All in a **single transaction**.
 
 ```bash
 npm run level 1
-npm run check 1
 ```
 
 ## Validation criteria
