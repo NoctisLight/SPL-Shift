@@ -74,21 +74,13 @@ cat levels/00-the-forge/BRIEFING.md
 
 Edit the `index.ts` file in the level directory. The imports and boilerplate are already there, you fill in the `// TODO` sections.
 
-### 3. Run your code
+### 3. Run and check
 
 ```bash
 npm run level 0
 ```
 
-This executes your code on devnet.
-
-### 4. Check your work
-
-```bash
-npm run check 0
-```
-
-The validator queries on-chain state and tells you what passed:
+This executes your code on devnet then automatically validates the result:
 
 ```
 Level 00 — The Forge
